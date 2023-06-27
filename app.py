@@ -13,6 +13,11 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 ALPHA_VANTAGE_API_KEY = os.getenv("ALPHA_VANTAGE_API_KEY")
 
+# Debugging statements
+#print(f"OpenAI Key: {OPENAI_API_KEY}")
+#print(f"News API Key: {NEWS_API_KEY}")
+#print(f"Alpha Vantage Key: {ALPHA_VANTAGE_API_KEY}")
+
 # Initialize the OpenAI API
 openai.api_key = OPENAI_API_KEY
 
@@ -117,7 +122,7 @@ def chat_with_bot(user_input):
     return bot_output
 
 # Streamlit application
-st.title("AI Chatbot")
+st.title("Jupiter AI ChatBot")
 
 user_input = st.text_input("You: ", "")
 if st.button("Send"):
