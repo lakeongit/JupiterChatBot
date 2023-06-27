@@ -13,8 +13,6 @@ Installation
 
     Clone the repository
 
-    bash
-
 git clone https://github.com/lakeongit/jupiter-chatbot.git
 
 
