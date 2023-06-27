@@ -1,38 +1,49 @@
-# Jupiter - AI Chatbot
+Jupiter - AI Chatbot
 
-Jupiter is a powerful AI chatbot built using Python, Streamlit, SQLite, and OpenAI's GPT-3. It also leverages the Wikipedia API to provide real-time information.
+Jupiter is a powerful AI chatbot built using Python, Streamlit, SQLite, OpenAI's GPT-3, Alpha Vantage and News API. It can provide real-time information about a specific topic from Wikipedia, the latest news headlines, and stock prices.
+Features
 
-## Features
+    Engages in conversation using GPT-3, one of the most powerful language models available.
+    Remembers the last 25 messages in a conversation to maintain context.
+    Fetches real-time data from Wikipedia to provide up-to-date information.
+    Provides the latest news headlines using the News API.
+    Provides real-time stock prices using the Alpha Vantage API.
 
-- Engages in conversation using GPT-3, one of the most powerful language models available.
-- Remembers the last 25 messages in a conversation to maintain context.
-- Fetches real-time data from Wikipedia to provide up-to-date information.
+Installation
 
-## Installation
+    Clone the repository
 
-1. Clone the repository
-   git clone https://github.com/lakeongit/jupiter-chatbot.git
+    bash
 
-2. Change into the project directory
-   cd jupiter-chatbot
+git clone https://github.com/lakeongit/jupiter-chatbot.git
 
-3. Install the required Python packages
-   pip install -r requirements.txt
 
-4. Add your OpenAI API key to a new `.env` file
-   echo "OPENAI_API_KEY=your_api_key_here" > .env
-   Replace `your_api_key_here` with your actual OpenAI API key.
+Change into the project directory
+Install the required Python packages
+pip install -r requirements.txt
 
-## Usage
+Add your API keys to a new .env file
 
-1. Start the Streamlit app
-   streamlit run app.py
+bash
 
-2. Visit the app in your web browser at `http://localhost:8501
+    echo "OPENAI_API_KEY=your_openai_api_key" > .env
+    echo "NEWS_API_KEY=your_news_api_key" >> .env
+    echo "ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key" >> .env
 
-## Contributing
+    Replace your_openai_api_key, your_news_api_key, and your_alpha_vantage_api_key with your actual API keys.
+
+Usage
+
+    Start the Streamlit app
+
+    arduino
+
+    streamlit run app.py
+
+    Visit the app in your web browser at http://localhost:8501
+
+Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
